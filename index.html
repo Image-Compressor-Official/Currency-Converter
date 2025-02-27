@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CurrencyFlow - Advanced Currency Converter for real-time, accurate currency exchange rates.">
+    <meta name="keywords" content="currency converter, exchange rates, live currency, currency exchange, money converter">
+    <meta name="author" content="Shabbir">
+    <title>CurrencyFlow - Currency Converter</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">CF</div>
+        <h1 class="title">CurrencyFlow</h1>
+        <div class="menu-icon" onclick="toggleMenu()">☰</div>
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#tools">Tools</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#privacy">Privacy</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="active">
+            <div class="hero">
+                <h2>Convert Currencies Instantly with CurrencyFlow</h2>
+                <p>Get live, accurate exchange rates for any currency worldwide.</p>
+                <a href="#tools" class="cta-button">Try Now</a>
+            </div>
+        </section>
+
+        <!-- Tools Section -->
+        <section id="tools" class="tool-section">
+            <h2>Currency Converter</h2>
+            <div class="converter-container">
+                <div class="converter">
+                    <select id="from-currency">
+                        <option value="USD">US Dollar (USD)</option>
+                        <option value="EUR">Euro (EUR)</option>
+                        <option value="GBP">British Pound (GBP)</option>
+                        <option value="INR">Indian Rupee (INR)</option>
+                        <!-- Add more currencies as needed -->
+                    </select>
+                    <input type="number" id="from-amount" value="1" placeholder="Amount">
+                    <button id="swap-currencies">↔️</button>
+                    <select id="to-currency">
+                        <option value="INR">Indian Rupee (INR)</option>
+                        <option value="USD">US Dollar (USD)</option>
+                        <option value="EUR">Euro (EUR)</option>
+                        <option value="GBP">British Pound (GBP)</option>
+                        <!-- Add more currencies as needed -->
+                    </select>
+                    <input type="number" id="to-amount" placeholder="Converted Amount" readonly>
+                    <button id="convert-btn">Convert</button>
+                </div>
+                <p id="rate-info">Live rates updated every 5 minutes.</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-section">
+            <h3>About</h3>
+            <p>This is a Currency Converter Website that provides the facility to convert any country's currency to any other country's currency.</p>
+        </div>
+        <div class="footer-section">
+            <h3>Privacy</h3>
+            <p>We do not collect, store, or share any user data.</p>
+        </div>
+        <div class="footer-section">
+            <h3>Services</h3>
+            <p>We provide all types of currency-related conversion and exchange services.</p>
+        </div>
+        <div class="footer-section">
+            <h3>Contact</h3>
+            <p>Email: support@currencyflow.com | Phone: +1-123-456-7890 | Address: 123 Currency Lane, Finance City</p>
+        </div>
+        <p class="footer-note">Developed by Shabbir</p>
+    </footer>
+
+    <!-- Ad Placeholder (Google AdSense or similar) -->
+    <div class="ad-slot" style="display: block; margin: 20px auto; width: 728px; height: 90px;">
+        <p>Ad Space (Integrate Google AdSense here)</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
