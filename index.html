@@ -1,66 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- मेटा टैग्स SEO ऑप्टिमाइज़ेशन के लिए -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CurrencyFlow</title>
+    <meta name="description" content="CurrencyFlow - 150+ देशों के लिए रियल-टाइम मुद्रा परिवर्तक">
+    <meta name="keywords" content="मुद्रा परिवर्तक, विनिमय दरें, लाइव मुद्रा, 150 देश">
+    <meta name="author" content="Shabbir">
+    <title>CurrencyFlow - मुद्रा परिवर्तक</title>
+    <!-- Google Fonts और स्टाइलशीट शामिल करना -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- हेडर -->
     <header>
         <div class="logo">CF</div>
         <h1 class="title">CURRENCYFLOW</h1>
-        <header>
-    <div class="logo">CF</div>
-    <h1 class="title">CURRENCYFLOW</h1>
-    <div class="menu-container">
-        <div class="menu-icon" onclick="toggleMenu()">☰</div>
-        <nav class="nav-menu">
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#tools">Tools</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#privacy">Privacy</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </div>
-        </header>
         <div class="menu-container">
             <div class="menu-icon" onclick="toggleMenu()">☰</div>
             <nav class="nav-menu">
                 <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#tools">Tools</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#privacy">Privacy</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#home">होम</a></li>
+                    <li><a href="#tools">टूल्स</a></li>
+                    <li><a href="#services">सेवाएँ</a></li>
+                    <li><a href="#privacy">गोपनीयता</a></li>
+                    <li><a href="#about">हमारे बारे में</a></li>
+                    <li><a href="#contact">संपर्क</a></li>
                 </ul>
             </nav>
         </div>
     </header>
-    <script src="script.js"></script>
-</body>
-</html>
 
-    <!-- Main Content -->
+    <!-- मुख्य सामग्री -->
     <main>
-        <!-- Home Section -->
+        <!-- होम सेक्शन -->
         <section id="home" class="active">
             <div class="hero">
-                <h2>Convert Currencies Instantly</h2>
-                <p>Real-time exchange rates for 150+ countries.</p>
-                <a href="#tools" class="cta-button">Start Converting</a>
+                <h2>मुद्राएँ तुरंत परिवर्तित करें</h2>
+                <p>150+ देशों के लिए रियल-टाइम विनिमय दरें।</p>
+                <a href="#tools" class="cta-button">परिवर्तन शुरू करें</a>
             </div>
         </section>
 
-        <!-- Tools Section -->
+        <!-- टूल्स सेक्शन -->
         <section id="tools" class="tool-section">
-            <h2>Currency Converter</h2>
+            <h2>मुद्रा परिवर्तक</h2>
             <div class="converter-container">
                 <div class="converter">
+                    <!-- पहली मुद्रा चुनने के लिए ड्रॉपडाउन -->
                     <select id="from-currency">
                         <option value="AED">UAE Dirham (AED)</option>
                         <option value="AFN">Afghan Afghani (AFN)</option>
@@ -222,10 +210,12 @@
                         <option value="ZAR">South African Rand (ZAR)</option>
                         <option value="ZMW">Zambian Kwacha (ZMW)</option>
                     </select>
-                    <input type="number" id="from-amount" value="1" placeholder="Amount">
+                    <!-- राशि इनपुट -->
+                    <input type="number" id="from-amount" value="1" placeholder="राशि">
+                    <!-- मुद्रा स्वैप बटन -->
                     <button id="swap-currencies">↔️</button>
+                    <!-- दूसरी मुद्रा चुनने के लिए ड्रॉपडाउन -->
                     <select id="to-currency">
-                        <!-- Same currency list as above -->
                         <option value="AED">UAE Dirham (AED)</option>
                         <option value="AFN">Afghan Afghani (AFN)</option>
                         <option value="ALL">Albanian Lek (ALL)</option>
@@ -386,38 +376,54 @@
                         <option value="ZAR">South African Rand (ZAR)</option>
                         <option value="ZMW">Zambian Kwacha (ZMW)</option>
                     </select>
-                    <input type="number" id="to-amount" placeholder="Converted Amount" readonly>
-                    <button id="convert-btn">Convert</button>
+                    <!-- परिवर्तित राशि दिखाने के लिए -->
+                    <input type="number" id="to-amount" placeholder="परिवर्तित राशि" readonly>
+                    <!-- परिवर्तन बटन -->
+                    <button id="convert-btn">परिवर्तन करें</button>
                 </div>
-                <p id="rate-info">Live rates updated every 5 minutes.</p>
+                <p id="rate-info">लाइव दरें हर 5 मिनट में अपडेट होती हैं।</p>
             </div>
         </section>
     </main>
 
-    <!-- Footer -->
+    <!-- फूटर -->
     <footer>
         <div class="footer-nav">
-            <a href="#" onclick="toggleFooterSection('about')">About</a> |
-            <a href="#" onclick="toggleFooterSection('privacy')">Privacy</a> |
-            <a href="#" onclick="toggleFooterSection('services')">Services</a> |
-            <a href="#" onclick="toggleFooterSection('contact')">Contact</a>
+            <a href="#" onclick="toggleFooterSection('about')">हमारे बारे में</a> |
+            <a href="#" onclick="toggleFooterSection('privacy')">गोपनीयता</a> |
+            <a href="#" onclick="toggleFooterSection('services')">सेवाएँ</a> |
+            <a href="#" onclick="toggleFooterSection('contact')">संपर्क</a>
         </div>
         <div class="footer-details">
-            <div id="about-details" class="footer-content" style="display: none;">
-                <p>CurrencyFlow provides real-time currency conversion for over 150 countries.</p>
+            <div id="about" class="footer-content" style="display: none;">
+                <p>CurrencyFlow 150+ देशों के लिए रियल-टाइम मुद्रा परिवर्तन प्रदान करता है।</p>
             </div>
-            <div id="privacy-details" class="footer-content" style="display: none;">
-                <p>We do not store or share user data.</p>
+            <div id="privacy" class="footer-content" style="display: none;">
+                <p>हम उपयोगकर्ता डेटा संग्रह या साझा नहीं करते।</p>
             </div>
-            <div id="services-details" class="footer-content" style="display: none;">
-                <p>Offering currency exchange and conversion services worldwide.</p>
+            <div id="services" class="footer-content" style="display: none;">
+                <p>दुनिया भर में मुद्रा विनिमय और परिवर्तन सेवाएँ प्रदान करना।</p>
             </div>
-            <div id="contact-details" class="footer-content" style="display: none;">
-                <p>Email: support@currencyflow.com | Phone: +1-123-456-7890</p>
+            <div id="contact" class="footer-content" style="display: none;">
+                <p>ईमेल: support@currencyflow.com | फोन: +1-123-456-7890</p>
             </div>
         </div>
-        <p class="footer-note">Developed by Shabbir</p>
+        <p class="footer-note">शब्बीर द्वारा विकसित</p>
     </footer>
+
+    <!-- Google AdSense प्लेसहोल्डर -->
+    <div class="ad-slot" style="text-align: center; margin: 20px;">
+        <!-- अपने Google AdSense कोड से बदलें -->
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+             data-ad-slot="YYYYYYYYYY"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+        <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+    </div>
 
     <script src="script.js"></script>
 </body>
