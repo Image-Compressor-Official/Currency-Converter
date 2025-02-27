@@ -1,16 +1,16 @@
-// Toggle mobile menu
+// मोबाइल मेन्यू टॉगल करना
 function toggleMenu() {
     const navMenu = document.querySelector('.nav-menu');
     navMenu.classList.toggle('active');
 }
 
-// Toggle footer section details
+// फूटर सेक्शन टॉगल करना
 function toggleFooterSection(sectionId) {
-    const content = document.getElementById(`${sectionId}-details`);
+    const content = document.getElementById(sectionId);
     content.style.display = content.style.display === 'none' ? 'block' : 'none';
 }
 
-// Currency Conversion Logic
+// मुद्रा परिवर्तन लॉजिक
 document.getElementById('convert-btn').addEventListener('click', () => {
     const fromCurrency = document.getElementById('from-currency').value;
     const toCurrency = document.getElementById('to-currency').value;
@@ -26,16 +26,16 @@ document.getElementById('convert-btn').addEventListener('click', () => {
                 toAmount.value = convertedAmount;
                 document.getElementById('rate-info').textContent = `1 ${fromCurrency} = ${rate.toFixed(4)} ${toCurrency}`;
             } else {
-                alert('Currency not supported by API.');
+                alert('API द्वारा यह मुद्रा समर्थित नहीं है।');
             }
         })
         .catch(error => {
-            console.error('Error:', error);
-            alert('Failed to fetch rates. Check your connection.');
+            console.error('त्रुटि:', error);
+            alert('दरें प्राप्त करने में विफल। अपनी कनेक्शन जाँच करें।');
         });
 });
 
-// Swap Currencies
+// मुद्राएँ स्वैप करना
 document.getElementById('swap-currencies').addEventListener('click', () => {
     const fromCurrency = document.getElementById('from-currency');
     const toCurrency = document.getElementById('to-currency');
