@@ -14,7 +14,7 @@
     <!-- Header -->
     <header>
         <div class="logo">CF</div>
-        <h1 class="title">CurrencyFlow</h1>
+        <h1 class="title">CURRENCYFLOW</h1>
         <div class="menu-icon" onclick="toggleMenu()">☰</div>
         <nav class="nav-menu">
             <ul>
@@ -49,6 +49,12 @@
                         <option value="EUR">Euro (EUR)</option>
                         <option value="GBP">British Pound (GBP)</option>
                         <option value="INR">Indian Rupee (INR)</option>
+                        <option value="JPY">Japanese Yen (JPY)</option>
+                        <option value="CAD">Canadian Dollar (CAD)</option>
+                        <option value="AUD">Australian Dollar (AUD)</option>
+                        <option value="CHF">Swiss Franc (CHF)</option>
+                        <option value="CNY">Chinese Yuan (CNY)</option>
+                        <option value="BRL">Brazilian Real (BRL)</option>
                         <!-- Add more currencies as needed -->
                     </select>
                     <input type="number" id="from-amount" value="1" placeholder="Amount">
@@ -58,6 +64,12 @@
                         <option value="USD">US Dollar (USD)</option>
                         <option value="EUR">Euro (EUR)</option>
                         <option value="GBP">British Pound (GBP)</option>
+                        <option value="JPY">Japanese Yen (JPY)</option>
+                        <option value="CAD">Canadian Dollar (CAD)</option>
+                        <option value="AUD">Australian Dollar (AUD)</option>
+                        <option value="CHF">Swiss Franc (CHF)</option>
+                        <option value="CNY">Chinese Yuan (CNY)</option>
+                        <option value="BRL">Brazilian Real (BRL)</option>
                         <!-- Add more currencies as needed -->
                     </select>
                     <input type="number" id="to-amount" placeholder="Converted Amount" readonly>
@@ -70,27 +82,31 @@
 
     <!-- Footer -->
     <footer>
-        <div class="footer-section">
-            <h3>About</h3>
-            <p>This is a Currency Converter Website that provides the facility to convert any country's currency to any other country's currency.</p>
+        <div class="footer-nav">
+            <a href="#" onclick="toggleFooterSection('about')">About</a> |
+            <a href="#" onclick="toggleFooterSection('privacy')">Privacy</a> |
+            <a href="#" onclick="toggleFooterSection('services')">Services</a> |
+            <a href="#" onclick="toggleFooterSection('contact')">Contact</a>
         </div>
-        <div class="footer-section">
-            <h3>Privacy</h3>
-            <p>We do not collect, store, or share any user data.</p>
-        </div>
-        <div class="footer-section">
-            <h3>Services</h3>
-            <p>We provide all types of currency-related conversion and exchange services.</p>
-        </div>
-        <div class="footer-section">
-            <h3>Contact</h3>
-            <p>Email: support@currencyflow.com | Phone: +1-123-456-7890 | Address: 123 Currency Lane, Finance City</p>
+        <div class="footer-details">
+            <div id="about-details" class="footer-content" style="display: none;">
+                <p>This is a Currency Converter Website that provides the facility to convert any country's currency to any other country's currency.</p>
+            </div>
+            <div id="privacy-details" class="footer-content" style="display: none;">
+                <p>We do not collect, store, or share any user data.</p>
+            </div>
+            <div id="services-details" class="footer-content" style="display: none;">
+                <p>We provide all types of currency-related conversion and exchange services.</p>
+            </div>
+            <div id="contact-details" class="footer-content" style="display: none;">
+                <p>Email: support@currencyflow.com | Phone: +1-123-456-7890 | Address: 123 Currency Lane, Finance City</p>
+            </div>
         </div>
         <p class="footer-note">Developed by Shabbir</p>
     </footer>
 
     <!-- Ad Placeholder (Google AdSense or similar) -->
-    <div class="ad-slot" style="display: block; margin: 20px auto; width: 728px; height: 90px;">
+    <div class="ad-slot" style="margin: 20px auto; width: 728px; height: 90px; background: #333; border-radius: 5px; text-align: center; padding: 10px; color: #fff;">
         <p>Ad Space (Integrate Google AdSense here)</p>
     </div>
 
