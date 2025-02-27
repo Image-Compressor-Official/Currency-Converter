@@ -46,7 +46,8 @@ header {
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
-    margin: 0 20px;
+    margin: 0 auto;
+    text-transform: uppercase;
 }
 
 .menu-icon {
@@ -186,14 +187,27 @@ footer {
     margin-top: 20px;
 }
 
-.footer-section {
-    margin-bottom: 15px;
+.footer-nav {
+    margin-bottom: 10px;
 }
 
-.footer-section h3 {
-    font-size: 18px;
-    margin-bottom: 10px;
-    color: #3498db;
+.footer-nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.footer-details {
+    margin-top: 10px;
+}
+
+.footer-content {
+    margin: 10px 0;
+    padding: 10px;
+    background: #2d2d2d;
+    border-radius: 5px;
+    display: none;
 }
 
 .footer-note {
@@ -203,11 +217,14 @@ footer {
 
 /* Ads */
 .ad-slot {
-    text-align: center;
     margin: 20px auto;
+    width: 728px;
+    height: 90px;
     background: #333;
     border-radius: 5px;
+    text-align: center;
     padding: 10px;
+    color: #fff;
 }
 
 /* Responsive Design */
@@ -265,6 +282,16 @@ footer {
 
     .converter button {
         width: 100%;
+    }
+
+    .footer-nav {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .ad-slot {
+        width: 100%;
+        height: auto;
     }
 }
 
