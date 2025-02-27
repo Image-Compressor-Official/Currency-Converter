@@ -1,4 +1,13 @@
-/* Header */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #1e1e1e, #2d2d2d);
+    color: #fff;
+    line-height: 1.6;
+}
+
+/* हेडर स्टाइलिंग */
 header {
     display: grid;
     grid-template-columns: auto 1fr auto;
@@ -20,37 +29,23 @@ header {
     background-clip: text;
     color: transparent;
     border-radius: 50%;
-    padding: 10px;
-    width: 50px;
-    height: 50px;
+    padding: 5px;
+    width: 40px;
+    height: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    border: 2px solid #3498db;
 }
 
 .title {
     text-align: center;
-    font-size: 36px;
-    font-weight: 900;
+    font-size: 28px;
+    font-weight: 700;
     background: linear-gradient(45deg, #3498db, #e74c3c);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
     text-transform: uppercase;
-    position: relative;
-    display: inline-block;
-}
-
-.title::after {
-    content: '💵💶💷💴';
-    font-size: 16px;
-    position: absolute;
-    bottom: -10px;
-    left: 50%;
-    transform: translateX(-50%);
-    white-space: nowrap;
 }
 
 .menu-container {
@@ -60,14 +55,10 @@ header {
 }
 
 .menu-icon {
-    font-size: 32px;
+    font-size: 28px;
     cursor: pointer;
     color: #fff;
-    transition: transform 0.3s;
-}
-
-.menu-icon:hover {
-    transform: rotate(90deg);
+    display: none;
 }
 
 .nav-menu {
@@ -92,7 +83,140 @@ header {
     color: #3498db;
 }
 
-/* Responsive Design */
+/* मुख्य सामग्री */
+main {
+    margin-top: 80px;
+    padding: 20px;
+}
+
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+    background: linear-gradient(to bottom, #3498db, #2ecc71);
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.hero h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 12px 25px;
+    background: #e74c3c;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 700;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.cta-button:hover {
+    background: #c0392b;
+    transform: scale(1.05);
+}
+
+.tool-section {
+    background: #2d2d2d;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.converter-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.converter {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.converter select, .converter input, .converter button {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+}
+
+.converter select, .converter input[type="number"] {
+    background: #333;
+    color: #fff;
+    border: 1px solid #444;
+}
+
+.converter button {
+    background: #3498db;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.converter button:hover {
+    background: #2980b9;
+}
+
+#swap-currencies {
+    background: #e74c3c;
+    border: none;
+    padding: 10px 15px;
+    font-size: 20px;
+}
+
+#swap-currencies:hover {
+    background: #c0392b;
+}
+
+#rate-info {
+    font-size: 14px;
+    color: #aaa;
+    text-align: center;
+}
+
+/* फूटर */
+footer {
+    background: #252525;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer-nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.footer-details {
+    margin-top: 10px;
+}
+
+.footer-content {
+    margin: 10px 0;
+    padding: 10px;
+    background: #2d2d2d;
+    border-radius: 5px;
+    display: none;
+}
+
+.footer-note {
+    font-size: 14px;
+    color: #aaa;
+}
+
+/* रेस्पॉन्सिव डिज़ाइन */
 @media (max-width: 768px) {
     header {
         grid-template-columns: 1fr 1fr;
@@ -114,6 +238,10 @@ header {
         justify-self: end;
     }
 
+    .menu-icon {
+        display: block;
+    }
+
     .nav-menu {
         display: none;
         position: absolute;
@@ -131,5 +259,22 @@ header {
         flex-direction: column;
         gap: 10px;
         padding: 10px;
+    }
+
+    .hero {
+        padding: 60px 20px;
+    }
+
+    .hero h2 {
+        font-size: 28px;
+    }
+
+    .converter {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .converter button {
+        width: 100%;
     }
 }
