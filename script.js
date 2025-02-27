@@ -4,6 +4,12 @@ function toggleMenu() {
     navMenu.classList.toggle('active');
 }
 
+// Toggle footer section details
+function toggleFooterSection(sectionId) {
+    const content = document.getElementById(`${sectionId}-details`);
+    content.style.display = content.style.display === 'none' ? 'block' : 'none';
+}
+
 // Currency Conversion Logic (Using ExchangeRate-API or similar)
 document.getElementById('convert-btn').addEventListener('click', () => {
     const fromCurrency = document.getElementById('from-currency').value;
