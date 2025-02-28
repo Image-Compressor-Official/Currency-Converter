@@ -78,8 +78,40 @@ function changeLanguage(lang) {
             privacy: "Nous ne collectons, ne stockons ni ne partageons aucune donnée utilisateur. Plateforme d'échange de devises 100% sécurisée et privée.",
             about: "C'est un site web gratuit de conversion de devises qui fournit des taux de change en direct. Convertissez la monnaie de n'importe quel pays instantanément.",
             contact: "Pour toute question, contactez-nous à support@stylishcurrencyconverter.com"
+        },
+        ar: {
+            home: "محول العملات - قم بتحويل عملة أي بلد بسهولة.",
+            tools: "أفضل حاسبة تحويل العملات وأسعار الصرف. 200+ دولة مدعومة، أسعار مباشرة ودعم عملات متعددة.",
+            services: "أسعار الصرف الحية، التحويل الفوري، الدعم متعدد اللغات. قارن بين العملات المختلفة وشاهد اتجاهات السوق الحية.",
+            privacy: "لا نجمع أو نحفظ أو نشارك أي بيانات مستخدم. منصة تبادل العملات 100% آمنة وخاصة.",
+            about: "هذا موقع ويب مجاني لتحويل العملات يوفر أسعار الصرف الحية. قم بتحويل عملة أي بلد فوراً.",
+            contact: "لأي استفسارات، تواصل معنا على support@stylishcurrencyconverter.com"
+        },
+        zh: {
+            home: "货币转换器主页 - 轻松转换任何国家的货币。",
+            tools: "最佳货币转换和汇率计算器。支持200+国家，实时汇率和多货币支持。",
+            services: "实时汇率，立即转换，多语言支持。比较不同货币并查看实时市场趋势。",
+            privacy: "我们不收集、存储或分享任何用户数据。100％安全和私密的货币交换平台。",
+            about: "这是一个免费的货币转换网站，提供实时汇率。立即将任何国家的货币转换为其他货币。",
+            contact: "如有任何疑问，请联系我们 support@stylishcurrencyconverter.com"
+        },
+        ru: {
+            home: "Конвертер валют - Легко конвертируйте валюту любой страны.",
+            tools: "Лучший калькулятор конвертации валют и обменных курсов. Поддержка 200+ стран, живые курсы и мультивалютная поддержка.",
+            services: "Живые курсы обмена, мгновенная конвертация, поддержка множества языков. Сравните разные валюты и посмотрите живые рыночные тенденции.",
+            privacy: "Мы не собираем, не храним и не делимся никакими данными пользователя. 100% безопасная и приватная платформа обмена валют.",
+            about: "Это бесплатный веб-сайт конвертации валют, предоставляющий живые курсы обмена. Мгновенно конвертируйте валюту любой страны в другую.",
+            contact: "Для любых вопросов, свяжитесь с нами по support@stylishcurrencyconverter.com"
+        },
+        pt: {
+            home: "Conversor de Moedas - Converta facilmente a moeda de qualquer país.",
+            tools: "Melhor calculadora de conversão de moeda e taxas de câmbio. Suporte para 200+ países, taxas ao vivo e suporte multimoeda.",
+            services: "Taxas de câmbio ao vivo, conversão instantânea, suporte multilíngue. Compare diferentes moedas e veja tendências de mercado ao vivo.",
+            privacy: "Não coletamos, armazenamos nem compartilhamos dados de usuário. Plataforma de troca de moedas 100% segura e privada.",
+            about: "Este é um site gratuito de conversão de moedas que fornece taxas de câmbio ao vivo. Converta a moeda de qualquer país instantaneamente.",
+            contact: "Para qualquer dúvida, entre em contato conosco em support@stylishcurrencyconverter.com"
         }
-        // Extend for all global languages as needed
+        // Add more languages (e.g., German, Italian, Japanese, etc.) for global coverage
     };
 
     const sections = {
