@@ -15,7 +15,7 @@ function navigate(sectionId, hideMenu = false) {
     document.querySelectorAll('section').forEach(section => section.classList.remove('active'));
     document.getElementById(sectionId).classList.add('active');
     if (hideMenu) toggleMenu(); // Close menu after navigation
-    toggleFooter(); // Ensure footer is hidden after navigation
+    toggleFooter(); // Ensure footer is hidden after navigation, but allow it to be toggled
 }
 
 // Currency Converter
